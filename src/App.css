@@ -1,0 +1,438 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.container {
+  /* Container Styling */
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Input Styling */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #5bc0de;
+  box-shadow: 0 0 10px rgba(91, 192, 222, 0.5);
+  outline: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c;
+  transform: translateY(-3px);
+}
+
+button.secondary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.secondary:hover {
+  background-color: #c9302c;
+  transform: translateY(-3px);
+}
+
+button.link-button {
+  background-color: transparent;
+  color: #0275d8;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 16px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+button.link-button:hover {
+  color: #025aa5;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"], button.secondary {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+} 
+.dashboard-container, .transactions-container, .withdrawal-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover, .dashboard-container:hover, .transactions-container:hover, .withdrawal-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.logout-button {
+  background-color: #b21212;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.dashboard-button {
+  background-color: #39109b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+} 
+.logout-button:hover {
+  background-color: #cc9f9f;
+  transform: translateY(-2px);
+}
+.dashboard-button:hover {
+  background-color: #675bd5;
+  transform: translateY(-2px);
+}
+.dashboard-button:active, .logout-button:active {
+  transform: translateY(0);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="phone"], input[type="number"], select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #099625;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Secondary and Link Buttons */
+.secondary {
+  background-color: #b30000;
+  border-radius: 10px;
+}
+
+.secondary:hover {
+  background-color: #b30000;
+  border-radius: 10px;
+}
+
+.link-button {
+  background-color: transparent;
+  color: #1a6fc4;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Dashboard and Transactions Page Styles */
+.salary-section, .percentage-section, .form-group {
+  margin-bottom: 20px;
+}
+
+.percentage-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.percentage-input p {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.save-button, .reset-button, .transactions-button {
+  width: 100%;
+  margin-top: 10px;
+  Padding: 10px;
+  border-radius: 10px;
+}
+
+.save-button[disabled], .transactions-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.bar-chart-container {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f4f4f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Withdrawal Page Styles */
+.withdrawal-container .form-group {
+  margin-bottom: 15px;
+}
+
+.withdraw-now-button {
+  width: 100%;
+  background-color: #d12626;
+  border-radius: 15px;
+}
+
+/* Specific Buttons on Transactions Page */
+.deposit-button, .withdrawal-button {
+  width: 48%;
+}
+
+.button-container {
+  Padding-top:15px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Additional Features */
+
+/* Tooltip Styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the tooltip element */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Toast Notification Styles */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.transaction-tabs {
+  padding: 8px;
+}
